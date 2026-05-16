@@ -15,23 +15,21 @@ def sorted_low_stock(products: dict) -> dict[str, int]:
     sorted_reserve_stock = dict(sorted(reserve.items(), key=lambda item: item[1]))
     return sorted_reserve_stock
 
-
-stock = {
-    "apple": 50,
-    "banana": 30,
-    "milk": 10,
-    "bread": 25
-}
-
-deliver = {
-    "banana": 20,
-    "milk": 15,
-    "eggs": 40,
-    "bread": 10
-}
-
-
 def main():
+    stock = {
+        "apple": 50,
+        "banana": 30,
+        "milk": 10,
+        "bread": 25
+    }
+
+    deliver = {
+        "banana": 20,
+        "milk": 15,
+        "eggs": 40,
+        "bread": 10
+    }
+
     print(f"Stock: {stock}")
     print(f"Delivery: {deliver}")
 
