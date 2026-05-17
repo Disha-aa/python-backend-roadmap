@@ -15,6 +15,23 @@ def sorted_low_stock(products: dict) -> dict[str, int]:
     sorted_reserve_stock = dict(sorted(reserve.items(), key=lambda item: item[1]))
     return sorted_reserve_stock
 
+
+def write_off(products: dict, item: str, quantity: int) -> dict[str, int]:
+    if quantity <= 0:
+        raise ValueError("Quantity must be greater than zero")
+    if item not in products:
+        raise KeyError(f"Item '{item}' not found")
+    if quantity > products[item]:
+        raise ValueError("Quantity exceeds stock")
+
+    written_off = products.copy()
+    written_off[item] -= quantity
+
+    if written_off[item] == 0:
+        del written_off[item]
+
+    return written_off
+
 def main():
     stock = {
         "apple": 50,
@@ -41,11 +58,20 @@ def main():
     for key, value in low_stock.items():
         print(f"{key}: {value}")
 
-    written_off = stock_after_update.pop("apple")
-    print(f"Written off: apple ({written_off} units)")
+    while True:
+        item = input("Enter item or 'stop' to stop: ")
+        if item  == "stop":
+            break
 
-    print(f"Final stock: {stock_after_update}")
+        try:
+            quantity = int(input("Enter quantity: "))
+            stock_after_update = write_off(stock_after_update, item, quantity)
+            print(f"Success, current products list: {stock_after_update}")
 
+        except ValueError as e:
+            print(f"Error: {e}")
+        except KeyError as e:
+            print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
