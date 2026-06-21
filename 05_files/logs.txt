@@ -1,0 +1,6 @@
+GET /api/v1/users
+POST /api/v1/payments
+GET /api/v1/users
+GET /api/v1/goods
+POST /api/v1/payments
+GET /api/v1/users
