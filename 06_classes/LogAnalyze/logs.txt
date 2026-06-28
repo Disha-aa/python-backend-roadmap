@@ -1,0 +1,3 @@
+GET /api/v1/users [status: 200]
+POST /api/v1/payments [status: 201]
+GET /api/v1/users [status: 500]
