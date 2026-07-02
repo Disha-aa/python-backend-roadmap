@@ -1,0 +1,3 @@
+SKU100,Mechanical Keyboard,150.00,5
+SKU200,Wireless Mouse,80.50,12
+SKU300,24-inch Monitor,300.00,2
