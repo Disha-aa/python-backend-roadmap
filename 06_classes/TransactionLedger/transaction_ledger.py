@@ -26,7 +26,7 @@ class BankAccount:
     def deposit(self, amount: Decimal) -> None:
         self._balance += amount
 
-        self._log_transaction(self.file_path, "DEPOSIT", amount)
+        self._log_transaction("DEPOSIT", amount)
 
     def withdraw(self, amount: Decimal) -> None:
         if amount > self._balance:
