@@ -1,0 +1,137 @@
+3 | generate_monthly_report | {"user_id": 401, "format": "pdf"}
+3 | cleanup_temp_files | {"path": "/tmp/uploads"}
+3 | backup_database | {"db_name": "users", "compress": true}
+3 | generate_monthly_report | {"user_id": 202, "format": "xlsx"}
+3 | cleanup_temp_files | {"path": "/var/tmp"}
+3 | backup_database | {"db_name": "orders", "compress": true}
+3 | generate_monthly_report | {"user_id": 881, "format": "pdf"}
+3 | cleanup_temp_files | {"path": "/opt/cache"}
+3 | backup_database | {"db_name": "billing", "compress": true}
+3 | generate_monthly_report | {"user_id": 109, "format": "csv"}
+3 | cleanup_temp_files | {"path": "/tmp/sessions"}
+3 | backup_database | {"db_name": "logs", "compress": false}
+3 | generate_monthly_report | {"user_id": 512, "format": "pdf"}
+3 | cleanup_temp_files | {"path": "/tmp/charts"}
+3 | backup_database | {"db_name": "analytics", "compress": true}
+3 | generate_monthly_report | {"user_id": 340, "format": "xlsx"}
+3 | cleanup_temp_files | {"path": "/tmp/logs"}
+3 | backup_database | {"db_name": "inventory", "compress": true}
+3 | generate_monthly_report | {"user_id": 901, "format": "pdf"}
+3 | cleanup_temp_files | {"path": "/tmp/cache_images"}
+3 | backup_database | {"db_name": "content", "compress": false}
+3 | generate_monthly_report | {"user_id": 111, "format": "csv"}
+3 | cleanup_temp_files | {"path": "/tmp/downloads"}
+3 | backup_database | {"db_name": "auth", "compress": true}
+3 | generate_monthly_report | {"user_id": 777, "format": "pdf"}
+3 | cleanup_temp_files | {"path": "/tmp/sessions_backup"}
+3 | backup_database | {"db_name": "wiki", "compress": true}
+3 | generate_monthly_report | {"user_id": 222, "format": "xlsx"}
+3 | cleanup_temp_files | {"path": "/tmp/exports"}
+3 | backup_database | {"db_name": "settings", "compress": false}
+3 | generate_monthly_report | {"user_id": 444, "format": "pdf"}
+3 | cleanup_temp_files | {"path": "/tmp/imports"}
+3 | backup_database | {"db_name": "crm", "compress": true}
+3 | generate_monthly_report | {"user_id": 555, "format": "csv"}
+3 | cleanup_temp_files | {"path": "/tmp/reports_old"}
+3 | backup_database | {"db_name": "tickets", "compress": true}
+3 | generate_monthly_report | {"user_id": 888, "format": "pdf"}
+3 | cleanup_temp_files | {"path": "/tmp/avatar_cache"}
+3 | backup_database | {"db_name": "hosts", "compress": false}
+3 | generate_monthly_report | {"user_id": 999, "format": "xlsx"}
+3 | cleanup_temp_files | {"path": "/tmp/old_sessions"}
+3 | backup_database | {"db_name": "billing_archive", "compress": true}
+2 | resize_user_avatar | {"user_id": 802, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 312}
+2 | update_inventory | {"item_id": 501, "stock": 42}
+2 | resize_user_avatar | {"user_id": 104, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 551}
+2 | update_inventory | {"item_id": 102, "stock": 15}
+2 | resize_user_avatar | {"user_id": 905, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 404}
+2 | update_inventory | {"item_id": 884, "stock": 0}
+2 | resize_user_avatar | {"user_id": 302, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 711}
+2 | update_inventory | {"item_id": 305, "stock": 110}
+2 | resize_user_avatar | {"user_id": 412, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 99}
+2 | update_inventory | {"item_id": 991, "stock": 3}
+2 | resize_user_avatar | {"user_id": 150, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 612}
+2 | update_inventory | {"item_id": 404, "stock": 99}
+2 | resize_user_avatar | {"user_id": 789, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 88}
+2 | update_inventory | {"item_id": 202, "stock": 77}
+2 | resize_user_avatar | {"user_id": 222, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 333}
+2 | update_inventory | {"item_id": 707, "stock": 18}
+2 | resize_user_avatar | {"user_id": 555, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 888}
+2 | update_inventory | {"item_id": 111, "stock": 5}
+2 | resize_user_avatar | {"user_id": 444, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 111}
+2 | update_inventory | {"item_id": 333, "stock": 30}
+2 | resize_user_avatar | {"user_id": 333, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 222}
+2 | update_inventory | {"item_id": 555, "stock": 8}
+2 | resize_user_avatar | {"user_id": 666, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 777}
+2 | update_inventory | {"item_id": 888, "stock": 100}
+2 | resize_user_avatar | {"user_id": 999, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 555}
+2 | update_inventory | {"item_id": 999, "stock": 1}
+2 | resize_user_avatar | {"user_id": 777, "size": "200x200"}
+2 | sync_user_profile | {"user_id": 444}
+2 | update_inventory | {"item_id": 222, "stock": 64}
+1 | send_auth_sms | {"phone": "+48123456789", "code": "9941"}
+1 | block_malicious_ip | {"ip": "192.168.1.105"}
+1 | process_payment | {"transaction_id": 90124, "amount": 150.0}
+1 | send_password_reset | {"email": "alex@example.com"}
+1 | send_auth_sms | {"phone": "+48789456123", "code": "1052"}
+1 | block_malicious_ip | {"ip": "10.0.0.45"}
+1 | process_payment | {"transaction_id": 90125, "amount": 89.99}
+1 | send_password_reset | {"email": "john@example.com"}
+1 | send_auth_sms | {"phone": "+48501234567", "code": "4432"}
+1 | block_malicious_ip | {"ip": "172.16.0.4"}
+1 | process_payment | {"transaction_id": 90126, "amount": 450.0}
+1 | send_password_reset | {"email": "sarah@example.com"}
+1 | send_auth_sms | {"phone": "+48601789456", "code": "8812"}
+1 | block_malicious_ip | {"ip": "192.168.1.200"}
+1 | process_payment | {"transaction_id": 90127, "amount": 12.5}
+1 | send_password_reset | {"email": "guest99@example.com"}
+1 | send_auth_sms | {"phone": "+48555123456", "code": "3021"}
+1 | block_malicious_ip | {"ip": "192.168.1.188"}
+1 | process_payment | {"transaction_id": 90128, "amount": 1000.0}
+1 | send_password_reset | {"email": "bob@example.com"}
+1 | send_auth_sms | {"phone": "+48777888999", "code": "7071"}
+1 | block_malicious_ip | {"ip": "10.10.10.10"}
+1 | process_payment | {"transaction_id": 90129, "amount": 25.0}
+1 | send_password_reset | {"email": "alice@example.com"}
+1 | send_auth_sms | {"phone": "+48111222333", "code": "1234"}
+1 | block_malicious_ip | {"ip": "192.168.88.21"}
+1 | process_payment | {"transaction_id": 90130, "amount": 5.5}
+1 | send_password_reset | {"email": "user12@example.com"}
+1 | send_auth_sms | {"phone": "+48444555666", "code": "5678"}
+1 | block_malicious_ip | {"ip": "8.8.8.8"}
+1 | process_payment | {"transaction_id": 90131, "amount": 99.0}
+1 | send_password_reset | {"email": "admin@example.com"}
+1 | send_auth_sms | {"phone": "+48999000111", "code": "9090"}
+1 | block_malicious_ip | {"ip": "1.1.1.1"}
+1 | process_payment | {"transaction_id": 90132, "amount": 19.99}
+1 | send_password_reset | {"email": "dev@example.com"}
+1 | send_auth_sms | {"phone": "+48888777666", "code": "1111"}
+1 | block_malicious_ip | {"ip": "192.168.0.1"}
+1 | process_payment | {"transaction_id": 90133, "amount": 120.0}
+1 | send_password_reset | {"email": "test@example.com"}
+1 | send_auth_sms | {"phone": "+48222333444", "code": "2222"}
+1 | block_malicious_ip | {"ip": "192.168.1.50"}
+1 | process_payment | {"transaction_id": 90134, "amount": 49.99}
+1 | send_password_reset | {"email": "manager@example.com"}
+1 | send_auth_sms | {"phone": "+48666777888", "code": "6666"}
+1 | block_malicious_ip | {"ip": "10.0.1.10"}
+1 | process_payment | {"transaction_id": 90135, "amount": 75.5}
+1 | send_password_reset | {"email": "support@example.com"}
+1 | send_auth_sms | {"phone": "+48999888777", "code": "9999"}
+1 | block_malicious_ip | {"ip": "172.16.254.1"}
+1 | process_payment | {"transaction_id": 90136, "amount": 320.0}
+1 | send_password_reset | {"email": "host@example.com"}
+1 | send_auth_sms | {"phone": "+48333444555", "code": "3333"}
